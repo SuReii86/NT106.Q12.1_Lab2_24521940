@@ -29,6 +29,11 @@ namespace NT106.Q12._1_Lab2_24521940
                     tb_IO.Text = sr.ReadToEnd();
                 }
             }
+            else
+            {
+                MessageBox.Show($"file {file} Không tồn tại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }    
 
         }  
 
@@ -48,7 +53,7 @@ namespace NT106.Q12._1_Lab2_24521940
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error: {ex.Message}", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Lỗi: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }

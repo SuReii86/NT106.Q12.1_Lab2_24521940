@@ -2,7 +2,7 @@ Phan Lê Tuấn
 Mai
 2
 2
-A3, B4
+A2, B4
 Nguyễn Văn A
 Đào, phở và piano
 1
@@ -12,7 +12,7 @@ Trần Văn C
 Mai
 2
 2
-A2, B4
+A2, B3
 Nguyễn Văn B
 Đào, phở và piano
 1

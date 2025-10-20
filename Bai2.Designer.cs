@@ -91,6 +91,7 @@
             this.tb_url.Location = new System.Drawing.Point(160, 325);
             this.tb_url.Name = "tb_url";
             this.tb_url.ReadOnly = true;
+            this.tb_url.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.tb_url.Size = new System.Drawing.Size(189, 35);
             this.tb_url.TabIndex = 4;
             // 
