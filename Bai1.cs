@@ -33,7 +33,6 @@ namespace NT106.Q12._1_Lab2_24521940
         }  
 
 
-
         private void btn_Write_Click(object sender, EventArgs e)
         {
             string file = "Cau1_IN.txt";
@@ -58,6 +57,19 @@ namespace NT106.Q12._1_Lab2_24521940
         {
             tb_label.Clear();
             tb_IO.Clear();
+        }
+
+        private void btn_ROUT_Click(object sender, EventArgs e)
+        {
+            String file = "Cau1_IN.txt";
+            tb_label.Text = file;
+            if (File.Exists(file))
+            {
+                using (StreamReader sr = new StreamReader(file))
+                {
+                    tb_IO.Text = sr.ReadToEnd();
+                }
+            }
         }
     }
 }

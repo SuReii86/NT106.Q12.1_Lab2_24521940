@@ -35,13 +35,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btn_RESET = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.btn_ROUT = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_READ
             // 
             this.btn_READ.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btn_READ.Font = new System.Drawing.Font("Cascadia Code SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_READ.Location = new System.Drawing.Point(94, 353);
+            this.btn_READ.Location = new System.Drawing.Point(139, 353);
             this.btn_READ.Name = "btn_READ";
             this.btn_READ.Size = new System.Drawing.Size(150, 50);
             this.btn_READ.TabIndex = 0;
@@ -53,7 +54,7 @@
             // 
             this.btn_Write.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btn_Write.Font = new System.Drawing.Font("Cascadia Code SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Write.Location = new System.Drawing.Point(94, 504);
+            this.btn_Write.Location = new System.Drawing.Point(139, 504);
             this.btn_Write.Name = "btn_Write";
             this.btn_Write.Size = new System.Drawing.Size(150, 50);
             this.btn_Write.TabIndex = 1;
@@ -93,7 +94,7 @@
             // 
             this.btn_RESET.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btn_RESET.Font = new System.Drawing.Font("Cascadia Code SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_RESET.Location = new System.Drawing.Point(94, 427);
+            this.btn_RESET.Location = new System.Drawing.Point(139, 427);
             this.btn_RESET.Name = "btn_RESET";
             this.btn_RESET.Size = new System.Drawing.Size(150, 50);
             this.btn_RESET.TabIndex = 5;
@@ -112,12 +113,25 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "GHI VÀ ĐỌC FILE";
             // 
+            // btn_ROUT
+            // 
+            this.btn_ROUT.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btn_ROUT.Font = new System.Drawing.Font("Cascadia Code SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ROUT.Location = new System.Drawing.Point(103, 591);
+            this.btn_ROUT.Name = "btn_ROUT";
+            this.btn_ROUT.Size = new System.Drawing.Size(213, 64);
+            this.btn_ROUT.TabIndex = 7;
+            this.btn_ROUT.Text = "Đọc file CAU1_IN.txt";
+            this.btn_ROUT.UseVisualStyleBackColor = true;
+            this.btn_ROUT.Click += new System.EventHandler(this.btn_ROUT_Click);
+            // 
             // Bai1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MidnightBlue;
             this.ClientSize = new System.Drawing.Size(1178, 844);
+            this.Controls.Add(this.btn_ROUT);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tb_label);
             this.Controls.Add(this.btn_RESET);
@@ -141,6 +155,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_RESET;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btn_ROUT;
     }
 }
 
